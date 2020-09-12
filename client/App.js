@@ -17,6 +17,7 @@ import IndivProvider from './components/home/IndivProvider';
 import Search from './components/home/Search';
 import Hotlines from './components/home/Hotlines';
 import Safeplaces from './components/home/Safeplaces';
+import Personalized from './components/Personalized/Personalized';
 //import Covid from './components/home/Covid19';
 
 import './index.scss';
@@ -53,6 +54,11 @@ const App = (props) => {
           exact
           path={paths.categoryPath + '/:id?'}
           render={(props) => <React.Fragment><div className="noDisplay"><Title/></div><Category id={props.match.params.id} /></React.Fragment>}
+        />
+        <Route
+          exact
+          path={paths.personalizedPath}
+          component={Personalized}
         />
       </Switch>
     </React.Fragment>

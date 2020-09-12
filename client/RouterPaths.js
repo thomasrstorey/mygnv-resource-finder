@@ -17,6 +17,7 @@ const safeplacesPath = `${mainPath}/safeplaces`;
 const covidPath = `${mainPath}/covid19`;
 
 const menuPath = `${mainPath}/title`;
+const personalizedPath = `${mainPath}/personalized`;
 
 const paths = {
   mainPath,
@@ -36,6 +37,8 @@ const paths = {
   covidPath,
 
   menuPath,
+
+  personalizedPath,
 
 };
 
